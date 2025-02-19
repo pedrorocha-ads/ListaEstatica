@@ -79,16 +79,17 @@ public class ListaEstatica {
             System.out.println(vetor[i]);
         }
         System.out.println();
-    }
+    }ç
     public void imprimeMemoria(){
         System.out.println("Memoria: ");
-        for(int i = 0; i < n_elementos; i++){
-            System.out.println(vetor[i]);
+        for(int i = 0; i < capacidade; i++){
+            System.out.println(vetor[i] + " ");
         }
         System.out.println();
     }
     public static void main(String[] args){
         ListaEstatica lista = new ListaEstatica(5);
+        lista.imprimeMemoria();
         lista.insereFinal(10);
         lista.insereFinal(20);
         lista.insereFinal(30);
@@ -102,6 +103,9 @@ public class ListaEstatica {
         lista.imprime();
         lista.imprimeMemoria();
         lista.inserePosicao(15, 2);
+        lista.imprime();
+        lista.imprimeMemoria();
+        lista.removePosicao(0);
         lista.imprime();
         lista.imprimeMemoria();
     }
