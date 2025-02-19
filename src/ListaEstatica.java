@@ -79,7 +79,7 @@ public class ListaEstatica {
             System.out.println(vetor[i]);
         }
         System.out.println();
-    }ç
+    }
     public void imprimeMemoria(){
         System.out.println("Memoria: ");
         for(int i = 0; i < capacidade; i++){
